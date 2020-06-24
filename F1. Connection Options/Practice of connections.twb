@@ -1,0 +1,623 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20191.20.0412.2232                               -->
+<workbook original-version='18.1' source-build='2019.1.15 (20191.20.0412.2232)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Page    2 Table  1+ (Bitcoin Sample)' inline='true' name='federated.0diphxx0fj56yf1efl6a40kzto8u' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Bitcoin Sample' name='pdf.0npzs3y1m4oqq01fdgykl1ny3qze'>
+            <connection class='pdf' cleaning='no' compat='no' dataRefreshTime='' interpretationMode='257' origfilename='C:/Users/hp/Desktop/Tableau/week 1/Resources/Datasets/F1. Connection Options/Bitcoin Sample.pdf' password='' pgFrom='2' pgTo='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation type='project'>
+          <columns>
+            <column caption='Date' hidden='true' name='[Page    2 Table  1+].[Date]' />
+            <column caption='F1' hidden='true' name='[Page    2 Table  1+].[F1]' />
+            <column name='[Project].[Date &amp; F1]' project-type='coalesce' />
+          </columns>
+          <bindings>
+            <binding expression='IF NOT ISNULL([Page    2 Table  1+].[Date]) THEN [Page    2 Table  1+].[Date]&#10;ELSEIF NOT ISNULL([Page    2 Table  1+].[F1]) THEN [Page    2 Table  1+].[F1]&#10;ELSE NULL&#10;END' name='[Project].[Date &amp; F1]' />
+          </bindings>
+          <relation type='project'>
+            <columns>
+              <column caption='Currency' hidden='true' name='[Page    2 Table  1+].[Currency]' />
+              <column caption='F2' hidden='true' name='[Page    2 Table  1+].[F2]' />
+              <column name='[Project].[Currency &amp; F2]' project-type='coalesce' />
+            </columns>
+            <bindings>
+              <binding expression='IF NOT ISNULL([Page    2 Table  1+].[Currency]) THEN [Page    2 Table  1+].[Currency]&#10;ELSEIF NOT ISNULL([Page    2 Table  1+].[F2]) THEN [Page    2 Table  1+].[F2]&#10;ELSE NULL&#10;END' name='[Project].[Currency &amp; F2]' />
+            </bindings>
+            <relation type='project'>
+              <columns>
+                <column caption='Open' hidden='true' name='[Page    2 Table  1+].[Open]' />
+                <column caption='F3' hidden='true' name='[Page    2 Table  1+].[F3]' />
+                <column name='[Project].[Open &amp; F3]' project-type='coalesce' />
+              </columns>
+              <bindings>
+                <binding expression='IF NOT ISNULL([Page    2 Table  1+].[Open]) THEN [Page    2 Table  1+].[Open]&#10;ELSEIF NOT ISNULL([Page    2 Table  1+].[F3]) THEN [Page    2 Table  1+].[F3]&#10;ELSE NULL&#10;END' name='[Project].[Open &amp; F3]' />
+              </bindings>
+              <relation type='project'>
+                <columns>
+                  <column caption='High' hidden='true' name='[Page    2 Table  1+].[High]' />
+                  <column caption='F4' hidden='true' name='[Page    2 Table  1+].[F4]' />
+                  <column name='[Project].[High &amp; F4]' project-type='coalesce' />
+                </columns>
+                <bindings>
+                  <binding expression='IF NOT ISNULL([Page    2 Table  1+].[High]) THEN [Page    2 Table  1+].[High]&#10;ELSEIF NOT ISNULL([Page    2 Table  1+].[F4]) THEN [Page    2 Table  1+].[F4]&#10;ELSE NULL&#10;END' name='[Project].[High &amp; F4]' />
+                </bindings>
+                <relation type='project'>
+                  <columns>
+                    <column caption='Low' hidden='true' name='[Page    2 Table  1+].[Low]' />
+                    <column caption='F5' hidden='true' name='[Page    2 Table  1+].[F5]' />
+                    <column name='[Project].[Low &amp; F5]' project-type='coalesce' />
+                  </columns>
+                  <bindings>
+                    <binding expression='IF NOT ISNULL([Page    2 Table  1+].[Low]) THEN [Page    2 Table  1+].[Low]&#10;ELSEIF NOT ISNULL([Page    2 Table  1+].[F5]) THEN [Page    2 Table  1+].[F5]&#10;ELSE NULL&#10;END' name='[Project].[Low &amp; F5]' />
+                  </bindings>
+                  <relation type='project'>
+                    <columns>
+                      <column caption='Close' hidden='true' name='[Page    2 Table  1+].[Close]' />
+                      <column caption='F6' hidden='true' name='[Page    2 Table  1+].[F6]' />
+                      <column name='[Project].[Close &amp; F6]' project-type='coalesce' />
+                    </columns>
+                    <bindings>
+                      <binding expression='IF NOT ISNULL([Page    2 Table  1+].[Close]) THEN [Page    2 Table  1+].[Close]&#10;ELSEIF NOT ISNULL([Page    2 Table  1+].[F6]) THEN [Page    2 Table  1+].[F6]&#10;ELSE NULL&#10;END' name='[Project].[Close &amp; F6]' />
+                    </bindings>
+                    <relation type='project'>
+                      <columns>
+                        <column caption='Currency Volume' hidden='true' name='[Page    2 Table  1+].[Currency Volume]' />
+                        <column caption='F7' hidden='true' name='[Page    2 Table  1+].[F7]' />
+                        <column name='[Project].[Currency Volume &amp; F7]' project-type='coalesce' />
+                      </columns>
+                      <bindings>
+                        <binding expression='IF NOT ISNULL([Page    2 Table  1+].[Currency Volume]) THEN [Page    2 Table  1+].[Currency Volume]&#10;ELSEIF NOT ISNULL([Page    2 Table  1+].[F7]) THEN [Page    2 Table  1+].[F7]&#10;ELSE NULL&#10;END' name='[Project].[Currency Volume &amp; F7]' />
+                      </bindings>
+                      <relation type='project'>
+                        <columns>
+                          <column caption='Volume USD' hidden='true' name='[Page    2 Table  1+].[Volume USD]' />
+                          <column caption='F8' hidden='true' name='[Page    2 Table  1+].[F8]' />
+                          <column name='[Project].[Volume USD &amp; F8]' project-type='coalesce' />
+                        </columns>
+                        <bindings>
+                          <binding expression='IF NOT ISNULL([Page    2 Table  1+].[Volume USD]) THEN [Page    2 Table  1+].[Volume USD]&#10;ELSEIF NOT ISNULL([Page    2 Table  1+].[F8]) THEN [Page    2 Table  1+].[F8]&#10;ELSE NULL&#10;END' name='[Project].[Volume USD &amp; F8]' />
+                        </bindings>
+                        <relation all='true' name='Page    2 Table  1+' type='union'>
+                          <columns>
+                            <column datatype='string' name='Date' />
+                            <column datatype='string' name='Currency' />
+                            <column datatype='string' name='Open' />
+                            <column datatype='string' name='High' />
+                            <column datatype='string' name='Low' />
+                            <column datatype='string' name='Close' />
+                            <column datatype='string' name='Currency Volume' />
+                            <column datatype='string' name='Volume USD' />
+                            <column datatype='string' name='F1' />
+                            <column datatype='string' name='F2' />
+                            <column datatype='string' name='F3' />
+                            <column datatype='string' name='F4' />
+                            <column datatype='string' name='F5' />
+                            <column datatype='string' name='F6' />
+                            <column datatype='string' name='F7' />
+                            <column datatype='string' name='F8' />
+                            <column datatype='string' name='Table Name' />
+                          </columns>
+                          <relation connection='pdf.0npzs3y1m4oqq01fdgykl1ny3qze' name='Page    2 Table  1' table='[&apos;Page    2 Table  1$&apos;]' type='table'>
+                            <columns gridOrigin='A1:H50:no:A1:H50:0' header='yes' outcome='2'>
+                              <column datatype='string' name='Date' ordinal='0' />
+                              <column datatype='string' name='Currency' ordinal='1' />
+                              <column datatype='string' name='Open' ordinal='2' />
+                              <column datatype='string' name='High' ordinal='3' />
+                              <column datatype='string' name='Low' ordinal='4' />
+                              <column datatype='string' name='Close' ordinal='5' />
+                              <column datatype='string' name='Currency Volume' ordinal='6' />
+                              <column datatype='string' name='Volume USD' ordinal='7' />
+                            </columns>
+                          </relation>
+                          <relation connection='pdf.0npzs3y1m4oqq01fdgykl1ny3qze' name='Page    3 Table  1' table='[&apos;Page    3 Table  1$&apos;]' type='table'>
+                            <columns gridOrigin='A1:H53:no:A1:H53:0' header='no' outcome='2'>
+                              <column datatype='string' name='F1' ordinal='0' />
+                              <column datatype='string' name='F2' ordinal='1' />
+                              <column datatype='string' name='F3' ordinal='2' />
+                              <column datatype='string' name='F4' ordinal='3' />
+                              <column datatype='string' name='F5' ordinal='4' />
+                              <column datatype='string' name='F6' ordinal='5' />
+                              <column datatype='string' name='F7' ordinal='6' />
+                              <column datatype='string' name='F8' ordinal='7' />
+                            </columns>
+                          </relation>
+                        </relation>
+                      </relation>
+                    </relation>
+                  </relation>
+                </relation>
+              </relation>
+            </relation>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Page    2 Table  1+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date &amp; F1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Date &amp; F1]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>Date &amp; F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Currency &amp; F2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Currency &amp; F2]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>Currency &amp; F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Open &amp; F3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Open &amp; F3]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>Open &amp; F3</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>High &amp; F4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[High &amp; F4]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>High &amp; F4</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Low &amp; F5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Low &amp; F5]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>Low &amp; F5</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Close &amp; F6</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Close &amp; F6]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>Close &amp; F6</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Currency Volume &amp; F7</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Currency Volume &amp; F7]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>Currency Volume &amp; F7</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Volume USD &amp; F8</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Volume USD &amp; F8]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>Volume USD &amp; F8</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[Page    2 Table  1+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.86551' measure-ordering='alphabetic' measure-percentage='0.13449' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='Sheet1 (Live and Extract)' inline='true' name='federated.0o1nigq0kj96a018y4vj30u4eoi7' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Live and Extract' name='excel-direct.1l4dyct0cyjxsx13fz5470icilll'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/hp/Desktop/Tableau/week 1/Resources/Datasets/F1. Connection Options/Live and Extract.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1l4dyct0cyjxsx13fz5470icilll' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C5:no:A1:C5:0' header='yes' outcome='6'>
+            <column datatype='string' name='Name' ordinal='0' />
+            <column datatype='string' name='LastName' ordinal='1' />
+            <column datatype='integer' name='Salary' ordinal='2' />
+          </columns>
+        </relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LastName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[LastName]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>LastName</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Salary</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Salary]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Salary</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C5:no:A1:C5:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Last Name' datatype='string' name='[LastName]' role='dimension' type='nominal' />
+      <column caption='Name1' datatype='string' name='[Name]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/hp/Documents/My Tableau Repository/Datasources/Scientists (Live and Extract).hyper' default-settings='yes' schema='Extract' sslmode='' update-time='05/22/2020 06:03:46 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Sheet1 (Live and Extract)' increment-value='%null%' refresh-type='create' rows-inserted='4' timestamp-start='2020-05-22 18:03:46.287' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LastName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LastName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LastName</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Salary</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Salary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Salary</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.501085' measure-ordering='alphabetic' measure-percentage='0.498915' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Scientists'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Scientists</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Live and Extract)' name='federated.0o1nigq0kj96a018y4vj30u4eoi7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0o1nigq0kj96a018y4vj30u4eoi7'>
+            <column caption='Name1' datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Salary]' role='measure' type='quantitative' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Salary]' derivation='Sum' name='[sum:Salary:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0o1nigq0kj96a018y4vj30u4eoi7].[sum:Salary:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0o1nigq0kj96a018y4vj30u4eoi7].[none:Name:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{DFE0FFD8-CC6D-48DC-93E2-942BE90C462A}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{31C0ECD4-5993-4211-9F7A-C41D86D3114B}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='Scientists'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9362364C-9C8B-485D-A85E-D6FA750FD1F7}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F859B41A-C844-4E47-9B85-CF22E2E51AAE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='104' name='Scientists' width='144'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
